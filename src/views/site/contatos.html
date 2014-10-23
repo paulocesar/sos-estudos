@@ -82,19 +82,13 @@
       </div><!-- tituloInterna -->
   </div><!-- header -->
 
-
-
-
-
-
-
      <div class="conteudo">
     <div class="limite">
       <div class="cLeft">
         <div class="contatos">
           <p>Nossa empresa conta com uma equipe multidisciplinar trabalhando 24 horas para atender as demandas dos nossos alunos – sempre caso a caso. Digite seus dados e o motivo da sua requisição e espere o nosso contato dentro de 30 minutos.</p>
 
-          <form action="" name="contato" onSubmit="return validarContato();" method="post">
+          <form action="/site/emailcontact" name="contato" onSubmit="return validarContato();" method="post">
             <fieldset>
               <div class="separaInput">
                 <input type="text" value="Nome" name="nome" id="nome">
@@ -151,6 +145,10 @@
 
               <input type="submit" value="">
 
+
+                <% if(message) { %>
+                    <p style="color: green"><%= message %></p>
+                <% } %>
             </fieldset>
           </form>
 

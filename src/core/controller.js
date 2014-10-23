@@ -19,7 +19,7 @@ var controller = {
 
     renderQ: function (reply, view, promise) {
         promise.then(function (data) {
-            reply.view('home/index', data);
+            reply.view(view, data);
         })
         .fail(function (err) {
             console.log(err);
