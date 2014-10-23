@@ -1,0 +1,20 @@
+CLASSROOM
+-create update classroom data
+-send email when start class
+-file upload
+-add(invite)/remove/find students
+-chat
+-set editable fields (name)
+
+HOME
+-hard test in user update data
+-add(teacher create/student invite)/find/remove classrooms
+
+CONFIGURATION
+-user configurations
+-upload image
+-
+
+https://github.com/bigbluebutton/bigbluebutton/blob/81e3d93bb7859f2865649c92f133c41aa6a58e60/bigbluebutton-client/locale/pt_BR/bbbResources.properties
+https://code.google.com/p/bigbluebutton/wiki/BigBlueButtonVM
+https://code.google.com/p/bigbluebutton/wiki/Localization

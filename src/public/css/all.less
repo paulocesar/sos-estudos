@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+/*
+Version: 2013
+Author: Agência Slim
+Author URI: http://www.agenciaslim.com.br
+*/
+
+/*INCLUDE FUNÇÕES*/
+@import url(resete.less);
+@import url(font-face.less);
+@import url(functions.less);
+@import url(pages.less);
+
+
+.header{
+	.menu{
+		width: 100%;height: 149px;
+			.limite{
+				width: 1012px;height:149px;margin: 0 auto;position: relative;
+
+				.estamosContratando{
+					position: absolute;top: 103px;
+					right: 0;
+				}	
+
+				.barLeft{
+						width: 403px;float: left;margin-right: 23px;
+						margin-top: 72px;
+
+						a{
+							float: left;margin-right: 33px;
+
+							li{
+								float: left;
+								font-size: 16px;font-family: 'museo700';
+								color: #494949;text-transform: uppercase;												
+
+								&:hover{
+									border: 5px solid #e03a2e;
+									.radius(10px);
+									padding: 7px 10px !important;
+									margin: -12px -15px;													
+								}
+							}
+
+						// 	.home{
+						// 		width: 46px;height: 13px;background: url(../images/menu/home.png) no-repeat;
+						// 	}
+
+						// 	.aEmpresa{
+						// 		width: 83px;height: 13px;background: url(../images/menu/a-empresa.png) no-repeat;
+						// 	}
+
+						// 	.nossaEquipe{
+						// 		width: 53px;height: 13px;background: url(../images/menu/equipe.png) no-repeat;
+						// 	}
+
+						// 	// .oQueFazemos{
+						// 	// 	width: 120px;height: 13px;background: url(../images/menu/o-que-fazemos.jpg) no-repeat;
+						// 	// }							
+
+						// 	.professores{
+						// 		width: 101px;height: 13px;background: url(../images/menu/professores.png) no-repeat;
+						// 	}
+						 }
+					} // barLeft
+
+				.logo{
+						float: left;margin-right: 27px;margin-top: 20px;
+					} // logo
+
+				.barRight{
+						width: 416px;float: right;margin-top: 72px;
+
+						a{
+							float: left;margin-right: 23px;
+
+							li{
+								float: left;
+								font-size: 16px;font-family: 'museo700';
+								color: #494949;text-transform: uppercase;							
+
+								&:hover{
+									border: 5px solid #e03a2e;
+									.radius(10px);
+									padding: 7px 10px !important;
+									margin: -12px -15px;													
+								}
+							}
+							
+
+							// .nossaMissao{
+							// 	width: 111px;height: 15px;background: url(../images/menu/nossa-missao.png) no-repeat;
+							// 	margin-top: -3px;
+							// }
+
+							// .depoimentosMenu{
+							// 	width: 110px;height: 13px;background: url(../images/menu/depoimentos.png) no-repeat;
+							// }
+
+							// .faq{
+							// 	width: 43px;height: 13px;background: url(../images/menu/faq.png) no-repeat;
+							// }
+
+							// .contato{
+							// 	width: 73px;height: 13px;background: url(../images/menu/contato.png) no-repeat;
+							// }
+						}
+					} // barRight
+			} // limite
+		} // menu
+
+		.tituloInterna{
+			width: 100%;
+			height: 99px;
+			float: left;
+			margin-bottom: 20px;
+			// background: url(../images/bgs/bg-titulo-interna-sos-estudos.jpg) no-repeat center;	
+
+			.limite{
+				width: 962px;
+				height: 100px;
+				padding: 0 20px;
+				margin: 0 auto;
+				margin-bottom: 20px;			
+				
+				h1{
+					padding-top: 35px;
+					font-family: 'museo700';
+					font-size: 30px;
+					color: #e03a2e;
+					margin-bottom: 20px;
+				}
+			}
+		}
+
+
+		.depoimentos{
+			width: 100%;height: 380px;background: url(../images/bgs/bg-header.jpg) no-repeat center;margin-bottom: 0;
+
+			.limite{
+				width: 1012px;height:148px;margin: 0 auto;
+				position: relative;
+
+				form{
+
+					div{
+						select{
+							padding: 5px 10px;
+							border: 1px solid #d9d9d9;
+							.radius(7px);
+							background: url(../images/bgs/bg-forms.jpg) repeat-x top;										
+						}
+					}
+
+					.disciplina{
+						position: absolute;
+						top: 185px;left: 208px;
+					}
+
+					.pacote{
+						position: absolute;
+						top: 238px;left: 162px;
+					}
+				}
+
+				.depoSlide{
+					width:300px;position: absolute;top: 109px;left: 0;
+					background: none;
+
+					.depoTop{
+						width: 100%;float: left;
+
+						img{
+							float: left;margin-right: 20px;
+						}
+
+						p{
+							width:192px;min-height:80px;font-size: 15px;color: #fff;font-family: 'georgia';
+							font-style: italic;margin-top: 10px;		
+							padding-left: 108px;				
+						}
+					} // depoTop
+
+				span{
+						widht:84px;float:left;font-size: 13px;color: #fff;
+						font-family: 'georgia';font-weight: bold;
+						margin-top: 10px;font-style: italic;
+						padding-left: 108px;
+					}
+
+					.borda{
+						float: left;margin-top: 10px;
+					}
+				} // depoSlide
+
+				.controls{
+					width:16px;position: absolute;top: -10px;left: 140px;
+
+					li{
+						float: left;cursor: pointer;
+					}
+
+					.prev{						
+						width: 27px;height: 28px;
+						background: url(../images/icones/controls-slide-depoimentos.png) no-repeat;
+						background-position: -30px 0;
+					}
+
+					.next{
+						width: 27px;height: 28px;
+						background: url(../images/icones/controls-slide-depoimentos.png) no-repeat;
+					}
+				}
+			 } // limite
+		}
+} // header
+
+
+
+
+
+.conteudo{
+	width: 100%;	
+	float: left;
+
+	.limite{
+		width: 962px;min-height:315px;margin: 0 auto;
+
+		.cLeft{
+			width: 596px;
+			min-height: 300px;
+			float: left;			
+		} // cLeft
+
+		.cRight{
+			width: 291px;
+			min-height: 300px;
+			float: right;
+
+			li{
+				width: 100%;
+				float: left;
+				margin-bottom: 40px;
+
+				img{
+					float: left;
+					margin-right: 11px;
+				}
+
+				.desc{
+					width: 190px;
+					display: table-cell;
+					vertical-align: middle;
+
+					.tit{
+						width: 190px;
+						height: 15px;
+						display: block;
+						margin-bottom: 10px;
+					}
+
+					p{
+						font-family: tahoma;
+						font-size: 12px;
+						text-align: justify;
+
+						strong{
+							font-family: tahoma;
+							font-size: 12px;
+						}
+					}
+				}
+			}
+		} // cLeft
+	}// limite
+} // conteudo
+
+
+
+
+.footer{
+	width: 100%;	
+	float: left;
+
+	.limite{
+		width: 1015px;min-height:167px;margin: 0 auto;
+		background: url(../images/bgs/bg-footer.jpg) no-repeat right;
+		padding-top: 70px;
+
+		.col1{
+			width: 200px;float: left;
+			margin-right: 27px;
+
+			.tit{
+				display: block;
+				margin-bottom: 20px;
+				margin-left: 26px;
+			}
+			
+			span{
+				font-family: 'tahoma';
+				font-size: 16px;
+				color: #3e3d3d;
+				font-weight: bold;
+				display: block;
+				margin-bottom: 10px;
+				margin-left: 27px;
+			}
+
+			p{
+				margin-left: 27px;
+				font-size: 12px;
+				font-family: tahoma;
+			}
+		}
+
+		.col2{
+			width: 207px;float: left;margin-top: 50px;
+
+			.tit{
+				display: block;
+				margin-bottom: 20px;
+			}
+
+			span{
+				font-family: 'tahoma';
+				font-size: 16px;
+				color: #3e3d3d;
+				font-weight: bold;
+				display: block;
+				margin-bottom: 10px;
+				margin-left: 27px;
+			}
+
+			p{
+				margin-left: 27px;
+				font-size: 12px;
+				font-family: tahoma;
+			}
+		}
+
+		.col3{
+			width: 535px;float: left;
+		}
+	}// limite	
+} // footer
+
+
+
+
+
