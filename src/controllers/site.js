@@ -53,5 +53,42 @@ module.exports = new Controller({
 
             this.renderQ(reply, 'site/contatos', promise);
         }
+    },
+
+    post_emailtrabalheconosco: {
+        config: C()
+            .payload({
+                nome: J.string(),
+                cpf: J.string(),
+                estadocivil: J.string(),
+                datadenascimento: J.string(),
+                telefone: J.string(),
+                endereco: J.string(),
+                cep: J.string(),
+                cidade: J.string(),
+                uf: J.string(),
+                email: J.string(),
+                escolaridade: J.string(),
+                empregos: J.string()
+            })
+            .done(),
+
+        handler: function (request, reply) {
+            var html = "<html>";
+
+            _.each(request.payload, function (content, name) {
+                html += '<p><b>' + name + ':</b> ' + content + '</p>';
+            });
+
+            html += '</html>';
+
+            var promise = email
+                .sendEmailQ('pauloc062@gmail.com', 'Currículo', html, html)
+                .then(function () {
+                    return {message: "Enviado com successo!"};
+                });
+
+            this.renderQ(reply, 'site/trabalheconosco', promise);
+        }
     }
 });

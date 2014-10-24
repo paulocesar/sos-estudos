@@ -94,7 +94,7 @@
         <div class="trabalheConosco">
           <p>Preencha corretamente o formulário abaixo com suas informações e logo entraremos em contato:</p>
 
-         <form action="" method="post" name="trabalhe" id="trabalhe" onSubmit="return validarTrabalhe();">
+         <form action="/site/emailtrabalheconosco" method="post" name="trabalhe" id="trabalhe" onSubmit="return validarTrabalhe();">
                   <label>
                     <input type="text" name="nome" value="Nome" style="width:270px">
                   </label>
@@ -175,6 +175,10 @@
                   <label>
                     <input type="submit" value="">
                   </label>
+
+                  <% if(message) { %>
+                      <label><p style="color: green"><%= message %></p></label>
+                  <% } %>
                 </form>
 
         </div><!-- trabalheConosco -->
